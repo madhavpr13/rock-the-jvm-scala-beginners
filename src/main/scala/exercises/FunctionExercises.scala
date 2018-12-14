@@ -8,11 +8,11 @@ object FunctionExercises extends App {
 
   def factorial(n:Long):Long = if( n <= 1) 1 else n * factorial(n-1)
 
-  def fibonacci(n:Int): Int = if( n <= 2) 1 else  {
+  def fibonacci(n:Int): BigInt = if( n <= 2) 1 else  {
     fibonacci(n-1) + fibonacci(n-2)
   }
 
-  println(fibonacci(15))
+  println(fibonacci(50))
 
   def isPrime(n:Int):Boolean = {
 
